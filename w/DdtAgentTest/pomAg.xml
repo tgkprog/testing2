@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>ddt.s2n.org</groupId>
+	<artifactId>DdtAgentTest</artifactId>
+	<version>1</version>
+	<packaging>pom</packaging>
+
+	<name>DdtAgentTest</name>
+	
+
+	
+	
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+<modules>
+		<module>Agent</module>
+		<module>Verifiers</module>
+		<module>DdtUtils</module>		
+		<module>DdtCommon</module>	
+		<module>Core</module>
+		<module>Data</module>
+		<module>HttpRunner</module>
+		<module>SA</module>
+
+	</modules>
+	
+	<dependencies>
+	
+		<!-- <dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>GrxTestData</artifactId>
+			<version>1</version>
+		</dependency> -->
+		
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>DdtUtils</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>ddt.s2n.org</groupId> -->
+<!-- 			<artifactId>Verifiers</artifactId> -->
+<!-- 			<version>1</version> -->
+<!-- 		</dependency> -->
+
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>Data</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+
+
+			<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>Agent</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>Core</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>Agent</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		
+		
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>HttpRunner</artifactId>
+			<version>1</version>
+		</dependency>
+		
+		
+		
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>SA</artifactId>
+			<version>1</version>
+		</dependency>
+	</dependencies>
+</project>

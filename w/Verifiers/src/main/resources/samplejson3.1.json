@@ -1,0 +1,110 @@
+{
+    "appleCareSalesDate": "09/18/13",						//$['appleCareSalesDate']
+    "pocLanguage": "en",									//$['pocLanguage']
+    "pocDeliveryPreference": "E",							//$['pocDeliveryPreference']
+    "mobileNumber": "",										//$['mobileNumber']
+    "purchaseOrderNumber": "12345",							//$['purchaseOrderNumber']
+    "monthlyPayment": "N",									//$['monthlyPayment']
+    "marketID": "",											//$['marketID']
+    "overridePocFlag": "",									//$['overridePocFlag']
+    "smsFlag": "1",											//$['smsFlag']
+    "emailFlag": "1",										//$['emailFlag']
+    "customerRequest": {
+        "customerFirstName": "John",						//$['customerRequest']['customerFirstName']
+        "customerLastName": "doe",							//$['customerRequest']['customerLastName']
+        "companyName": "Apple",								//$['customerRequest']['companyName']
+        "customerEmailId": "john.doe@apple.com",			//$['customerRequest']['customerEmailId']
+        "addressLine1": "1  INFINITE LOOP",					//$['customerRequest']['addressLine1']
+        "addressLine2": "",									//$['customerRequest']['addressLine2']
+        "city": "CUPERTINO",								//$['customerRequest']['city']
+        "stateCode": "CA",									//$['customerRequest']['stateCode']
+        "zipCode": "95014",									//$['customerRequest']['zipCode']
+        "countryCode": "CA",								//$['customerRequest']['countryCode']
+        "primaryPhoneNumber": ""							//$['customerRequest']['primaryPhoneNumber']
+    },
+    "customerRequest1": {
+        "customerFirstName": "anand",						//$['customerRequest1']['customerFirstName']
+        "customerLastName": "kumar",						//$['customerRequest1']['customerLastName']
+        "companyName": "Apple",								//$['customerRequest1']['companyName']
+        "customerEmailId": "aanand.kumar@apple.com",		//$['customerRequest1']['customerEmailId']
+        "addressLine1": "1  INFINITE LOOP1",				//$['customerRequest1']['addressLine1']
+        "addressLine2": "",									//$['customerRequest1']['addressLine2']
+        "city": "CUPERTINO1",								//$['customerRequest1']['city']
+        "stateCode": "CA1",									//$['customerRequest1']['stateCode']
+        "zipCode": "950141",								//$['customerRequest1']['zipCode']
+        "countryCode": "CA1",								//$['customerRequest1']['countryCode']
+        "primaryPhoneNumber": ""							//$['customerRequest1']['primaryPhoneNumber']
+    },
+    "customerReq1": {
+    	"customerReq2": {
+        	"customerFirstName": "anand",					//$['customerReq1']['customerReq2']['customerFirstName']
+        	"customerLastName": "kumar",					//$['customerReq1']['customerReq2']['customerLastName']
+        	"companyName": "Apple",							//$['customerReq1']['customerReq2']['companyName']
+        	"customerEmailId": "aanand.kumar@apple.com",	//$['customerReq1']['customerReq2']['customerEmailId']
+        	"addressLine1": "1  INFINITE LOOP1",			//$['customerReq1']['customerReq2']['addressLine1']
+        	"addressLine2": "",								//$['customerReq1']['customerReq2']['addressLine2']
+        	"city": "CUPERTINO1",							//$['customerReq1']['customerReq2']['city']
+        	"stateCode": "CA1",								//$['customerReq1']['customerReq2']['stateCode']
+        	"zipCode": "950141",							//$['customerReq1']['customerReq2']['zipCode']
+        	"countryCode": "CA1",							//$['customerReq1']['customerReq2']['countryCode']
+        	"primaryPhoneNumber": ""						//$['customerReq1']['customerReq2']['primaryPhoneNumber']
+    	}
+    },
+    "customerReq8": {
+    	"customerReq9": [{
+        	"customerFirstName": "anand",					//$['customerReq8']['customerReq9'][0]['customerFirstName']
+        	"customerLastName": "kumar",					//$['customerReq8']['customerReq9'][0]['customerLastName']
+        	"companyName": "Apple",							//$['customerReq8']['customerReq9'][0]['companyName']
+        	"customerEmailId": "aanand.kumar@apple.com",	//$['customerReq8']['customerReq9'][0]['customerEmailId']
+        	"addressLine1": "1  INFINITE LOOP1",			//$['customerReq8']['customerReq9'][0]['addressLine1']
+        	"addressLine2": "",								//$['customerReq8']['customerReq9'][0]['addressLine2']
+        	"city": "CUPERTINO1",							//$['customerReq8']['customerReq9'][0]['city']
+        	"stateCode": "CA1",								//$['customerReq8']['customerReq9'][0]['stateCode']
+        	"zipCode": "950141",							//$['customerReq8']['customerReq9'][0]['zipCode']
+        	"countryCode": "CA1",							//$['customerReq8']['customerReq9'][0]['countryCode']
+        	"primaryPhoneNumber": ""						//$['customerReq8']['customerReq9'][0]['primaryPhoneNumber']
+    	}]
+    },
+    "deviceRequest": [
+    	[
+    		[
+        		{
+            		"deviceId": "F17L1140F8GH",				//$['deviceRequest'][0][0][0]['deviceId']
+            		"secondarySerialNumber": "",			//$['deviceRequest'][0][0][0]['secondarySerialNumber']
+            		"hardwareDateOfPurchase": "09/18/13"	//$['deviceRequest'][0][0][0]['hardwareDateOfPurchase']
+        		},
+        		{
+            		"deviceId": "F17L1140F8HI",				//$['deviceRequest'][0][0][1]['deviceId']
+            		"secondarySerialNumber": "",			//$['deviceRequest'][0][0][1]['secondarySerialNumber']
+            		"hardwareDateOfPurchase": "09/18/2013"	//$['deviceRequest'][0][0][1]['hardwareDateOfPurchase']
+        		}
+    		],
+    		[
+        		{
+            		"deviceId": "ABC17L1140F8GH",			//$['deviceRequest'][0][1][0]['deviceId']
+            		"secondarySerialNumber": "",			//$['deviceRequest'][0][1][0]['secondarySerialNumber']
+            		"hardwareDateOfPurchase": "09/18/13"	//$['deviceRequest'][0][1][0]['hardwareDateOfPurchase']
+        		},
+        		{
+            		"deviceId": "ABC17L1140F8HI",			//$['deviceRequest'][0][1][1]['deviceId']
+            		"secondarySerialNumber": "",			//$['deviceRequest'][0][1][1]['secondarySerialNumber']
+            		"hardwareDateOfPurchase": "09/18/2013"	//$['deviceRequest'][0][1][1]['hardwareDateOfPurchase']
+        		}
+    		]
+    	],
+    	[
+    		[
+        		{
+            		"deviceId": "XYZ17L1140F8GH",			//$['deviceRequest'][1][0][0]['deviceId']
+            		"secondarySerialNumber": "",			//$['deviceRequest'][1][0][0]['secondarySerialNumber']
+            		"hardwareDateOfPurchase": "09/18/13"	//$['deviceRequest'][1][0][0]['hardwareDateOfPurchase']
+        		},
+        		{
+            		"deviceId": "XYZ17L1140F8HI",			//$['deviceRequest'][1][0][1]['deviceId']
+            		"secondarySerialNumber": "",			//$['deviceRequest'][1][0][1]['secondarySerialNumber']
+            		"hardwareDateOfPurchase": "09/18/2013"	//$['deviceRequest'][1][0][1]['hardwareDateOfPurchase']
+        		}
+    		]
+    	]
+    ]
+}

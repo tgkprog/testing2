@@ -1,0 +1,27 @@
+
+{"pocType" : "238749",
+  "orderDetailsResponses" : {
+  	"pocType" : "238748",
+    "deviceEligibilityResponse" : {
+      "coverageDuration" : 0,
+      "deviceDateOfPurchase" : "09/24/13",
+      "deviceId" : "C02L7999DTY3",
+      "partDescription" : "",
+      "pocType" : "RPOC",
+      "productStatement" : "MACBOOK PRO",
+      "registeredDevice" : 1,
+      "secondaryDisplay" : 1,
+      "secondarySerialNumber" : ""
+    },
+    "orderEligibilityResponse" : {
+      "agreementId" : "3211100LILQH",
+      "appleCareSalesDate" : "09/24/13",
+      "coverageDurationStatement" : 0,
+      "partType" : "APP",
+      "pocType" : "RPOC",
+      "purchaseMode" : "C",
+      "purchaseOrderNumber" : 1234567
+    }
+  }
+}
+

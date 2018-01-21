@@ -1,0 +1,23 @@
+{
+    "orderDetailsResponses": {
+        "deviceEligibilityResponse": {
+            "coverageDuration": 12,
+            "deviceDateOfPurchase": "09/18/13",
+            "deviceId": "F17L1140F8GH",
+            "partDescription": "",
+            "pocType": "APOC",
+            "productStatement": "Plan covered for iPhone including accidental Damages.",
+            "registeredDevice": 1,
+            "secondaryDisplay": 0
+        },
+        "orderEligibilityResponse": {
+            "agreementId": "3211100lcted",
+            "appleCareSalesDate": "09/18/13",
+            "coverageDurationStatement": 12,
+            "partType": "AC+",
+            "pocType": "APOC",
+            "purchaseMode": "C",
+            "purchaseOrderNumber": 12345
+        }
+    }
+}

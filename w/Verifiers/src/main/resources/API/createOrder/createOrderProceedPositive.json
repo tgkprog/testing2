@@ -1,0 +1,15 @@
+{
+    "orderDetailsResponses": {
+        "deviceEligibilityResponse": {
+            "coverageDuration": 0,
+            "deviceDateOfPurchase": "09/18/13",
+            "deviceId": "C02L1021DHJP",
+            "partDescription": "APP IMAC",
+            "pocType": "APOC",
+            "productStatement": "IMAC",
+            "registeredDevice": 1,
+            "secondaryDisplay": 1
+        }
+    },
+    "pocType": "APOC"
+}

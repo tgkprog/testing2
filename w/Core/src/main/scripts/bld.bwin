@@ -1,0 +1,30 @@
+cd C:\data\tfw\w
+
+cd Utils
+rem call mvn clean install -Dmaven.test.skip=true
+rem call sleep 4
+
+cd ..\Data
+call mvn clean install -Dmaven.test.skip=true
+call sleep 4
+
+cd ..\Agent
+call mvn clean install -Dmaven.test.skip=true
+call sleep 4
+
+cd ..\Core
+call mvn clean install -Dmaven.test.skip=true
+call sleep 4
+
+
+cd ..\HttpRunner
+call mvn clean install -Dmaven.test.skip=true
+call sleep 4
+
+cd ..\SeleniumRunner
+call mvn clean install -Dmaven.test.skip=true
+call sleep 4
+
+cd ..\TfwAgentTest
+call mvn clean install -Dmaven.test.skip=true
+call sleep 4

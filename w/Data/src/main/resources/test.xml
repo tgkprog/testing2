@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+         <context:annotation-config />
+        <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+			<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+			<property name="url" value="jdbc:mysql://10.1.0.25:3306/grxqa" />
+			<property name="username" value="grxqa" />
+			<property name="password" value="grxqa"></property>
+		</bean>
+
+		<!-- (see dataAccessContext-jta.xml for an alternative) -->
+		<bean id="transactionManager"
+			class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+			<property name="dataSource" ref="dataSource" />
+		</bean>
+		<bean id="laneDao" class="org.s2n.ddt.dao.impl.LaneDaoImpl"/>
+		
+		<bean id="taskDao" class="org.s2n.ddt.dao.impl.TaskDaoImpl"/>
+		
+		<bean id="rResultDao" class="org.s2n.ddt.dao.impl.RunResultDaoImpl"/>
+		
+		<bean id="tResultDao" class="org.s2n.ddt.dao.impl.TaskResultDaoImpl"/>
+		
+		<bean id="testStepResultDao" class="org.s2n.ddt.dao.impl.TestStepResultDaoImpl"/>
+		
+		<bean id="testCaseResultDao" class="org.s2n.ddt.dao.impl.TestCaseResultDaoImpl"/>
+</beans>

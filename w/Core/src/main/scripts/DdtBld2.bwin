@@ -1,0 +1,29 @@
+rem set BLD_HOME=\data\tfw\w
+echo %BLD_HOME%
+rem sleep 5
+
+
+cd %BLD_HOME%\Utils
+rem mvn clean install -Dmaven.test.skip=true
+rem sleep 2
+
+rem cd %BLD_HOME%\Data
+rem mvn clean install -Dmaven.test.skip=true
+rem sleep 2
+
+rem cd %BLD_HOME%\Core
+rem mvn clean install -Dmaven.test.skip=true
+rem sleep 2
+
+cd %BLD_HOME%\Agent
+mvn clean install -Dmaven.test.skip=true
+sleep 2
+
+
+
+cd %BLD_HOME%\HttpRunner 
+mvn clean install -Dmaven.test.skip=true
+
+
+rem 
+cd %BLD_HOME%\HttpRunner 

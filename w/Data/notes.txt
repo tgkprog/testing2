@@ -1,0 +1,35 @@
+
+
+<plugin>
+				<groupId>com.mysema.querydsl</groupId>
+				<artifactId>querydsl-maven-plugin</artifactId>
+				<version>${querydsl-maven-plugin.version}</version>
+				<executions>
+					<execution><!--  TODO find a way to run this plugin only under if certain flag is set -->
+					 <id>execution1</id>
+          			  <phase>compile</phase>
+						<goals>
+							<goal>export</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<jdbcDriver>com.mysql.jdbc.Driver</jdbcDriver>
+					<!-- <jdbcUrl>jdbc:mysql://localhost:3306/framework</jdbcUrl> -->
+					<jdbcUrl>jdbc:mysql://10.10.11.18:3306/projectautomation</jdbcUrl>
+					<!-- <jdbcUser>root</jdbcUser> -->
+					<jdbcUser>projectauto</jdbcUser>
+					<jdbcPassword>Project@aut0</jdbcPassword>
+					<packageName>org.s2n.ddt.generated.pojo</packageName>
+					<targetFolder>${project.basedir}/src/main/java</targetFolder>
+					<schemaPattern>APP</schemaPattern>
+					 <goalPrefix>mysema1</goalPrefix>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+						<version>${mysql.driver.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>

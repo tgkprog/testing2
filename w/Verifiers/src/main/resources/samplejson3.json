@@ -1,0 +1,110 @@
+{
+    "appleCareSalesDate": "09/18/13",						
+    "pocLanguage": "en",									
+    "pocDeliveryPreference": "E",							
+    "mobileNumber": "",										
+    "purchaseOrderNumber": "12345",							
+    "monthlyPayment": "N",									
+    "marketID": "",											
+    "overridePocFlag": "",									
+    "smsFlag": "1",											
+    "emailFlag": "1",										
+    "customerRequest": {
+        "customerFirstName": "John",						
+        "customerLastName": "doe",							
+        "companyName": "Apple",								
+        "customerEmailId": "john.doe@apple.com",			
+        "addressLine1": "1  INFINITE LOOP",					
+        "addressLine2": "",									
+        "city": "CUPERTINO",								
+        "stateCode": "CA",									
+        "zipCode": "95014",									
+        "countryCode": "CA",								
+        "primaryPhoneNumber": ""							
+    },
+    "customerRequest1": {
+        "customerFirstName": "anand",						
+        "customerLastName": "kumar",						
+        "companyName": "Apple",								
+        "customerEmailId": "aanand.kumar@apple.com",		
+        "addressLine1": "1  INFINITE LOOP1",				
+        "addressLine2": "",									
+        "city": "CUPERTINO1",								
+        "stateCode": "CA1",									
+        "zipCode": "950141",								
+        "countryCode": "CA1",								
+        "primaryPhoneNumber": ""							
+    },
+    "customerReq1": {
+    	"customerReq2": {
+        	"customerFirstName": "anand",					
+        	"customerLastName": "kumar",					
+        	"companyName": "Apple",							
+        	"customerEmailId": "aanand.kumar@apple.com",	
+        	"addressLine1": "1  INFINITE LOOP1",			
+        	"addressLine2": "",								
+        	"city": "CUPERTINO1",							
+        	"stateCode": "CA1",								
+        	"zipCode": "950141",							
+        	"countryCode": "CA1",							
+        	"primaryPhoneNumber": ""						
+    	}
+    },
+    "customerReq8": {
+    	"customerReq9": [{
+        	"customerFirstName": "anand",					
+        	"customerLastName": "kumar",					
+        	"companyName": "Apple",							
+        	"customerEmailId": "aanand.kumar@apple.com",	
+        	"addressLine1": "1  INFINITE LOOP1",			
+        	"addressLine2": "",								
+        	"city": "CUPERTINO1",							
+        	"stateCode": "CA1",								
+        	"zipCode": "950141",							
+        	"countryCode": "CA1",							
+        	"primaryPhoneNumber": ""						
+    	}]
+    },
+    "deviceRequest": [
+    	[
+    		[
+        		{
+            		"deviceId": "F17L1140F8GH",				
+            		"secondarySerialNumber": "",			
+            		"hardwareDateOfPurchase": "09/18/13"	
+        		},
+        		{
+            		"deviceId": "F17L1140F8HI",				
+            		"secondarySerialNumber": "",			
+            		"hardwareDateOfPurchase": "09/18/2013"	
+        		}
+    		],
+    		[
+        		{
+            		"deviceId": "ABC17L1140F8GH",			
+            		"secondarySerialNumber": "",			
+            		"hardwareDateOfPurchase": "09/18/13"	
+        		},
+        		{
+            		"deviceId": "ABC17L1140F8HI",			
+            		"secondarySerialNumber": "",			
+            		"hardwareDateOfPurchase": "09/18/2013"	
+        		}
+    		]
+    	],
+    	[
+    		[
+        		{
+            		"deviceId": "XYZ17L1140F8GH",			
+            		"secondarySerialNumber": "",			
+            		"hardwareDateOfPurchase": "09/18/13"	
+        		},
+        		{
+            		"deviceId": "XYZ17L1140F8HI",			
+            		"secondarySerialNumber": "",			
+            		"hardwareDateOfPurchase": "09/18/2013"	
+        		}
+    		]
+    	]
+    ]
+}

@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>ddt.s2n.org</groupId>
+	<artifactId>Verifiers</artifactId>
+	<version>1</version>
+	<packaging>jar</packaging>
+
+	<name>Verifiers</name>
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<ddt.dependency.version>1</ddt.dependency.version>
+		<commons-validator.version>1.4.0</commons-validator.version>
+		<json-lib.version>2.4</json-lib.version>
+		<json-path.version>0.8.1</json-path.version>
+		<json-schema-validator>1.5.2</json-schema-validator>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>DdtUtils</artifactId>
+			<version>${ddt.dependency.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>Data</artifactId>
+			<version>${ddt.dependency.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-validator</groupId>
+			<artifactId>commons-validator</artifactId>
+			<version>${commons-validator.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>${json-lib.version}</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<version>${json-path.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.kitchen-eel</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>${json-schema-validator}</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+			</resource>
+			<resource>
+				<directory>src/test/java</directory>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<excludes>
+					<exclude>log4j.xml</exclude>
+					<exclude>**/*.json</exclude>
+					<exclude>**/*.properties</exclude>
+				</excludes>
+			</resource>
+		</resources>
+	</build>
+</project>

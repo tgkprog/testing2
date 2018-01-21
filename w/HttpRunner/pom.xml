@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ddt.s2n.org</groupId>
+	<artifactId>HttpRunner</artifactId>
+	<packaging>jar</packaging>
+	<version>1</version>
+	<name>Maven Quick Start Archetype</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>DdtCommon</artifactId>
+			<version>1</version>
+		</dependency>	
+
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>Data</artifactId>
+			<version>1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ddt.s2n.org</groupId>
+			<artifactId>Agent</artifactId>
+			<version>1</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+			</resource>
+			<resource>
+				<directory>src/test/java</directory>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<excludes>
+					<exclude>log4j.xml</exclude>
+				</excludes>
+			</resource>
+		</resources>
+	</build>
+</project>

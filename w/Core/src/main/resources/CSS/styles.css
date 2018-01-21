@@ -1,0 +1,25 @@
+body{background-color:#808080;}
+body, table, td{font-family:Geneva; font-size:12px;}
+.trBg{background-color:#1E90FF; color:white;}
+.trExceptiobBg{background-color:#FF4500; color:white;}
+h1{color:blue; font-size:18px;}
+.tableBanner{border: 0px solid; width:100%;}
+.tableReport {width:92%; background-color:#FFFFFF; margin-top:4%; margin-left:4%; margin-right:4%;}
+.tableExecution {border: 1px solid; width:100%; background-color:#1E90FF; color:white;}
+.tableFuncSummary{border-collapse: collapse; width:100%;}
+.tableFuncSummaryDetail{border-collapse: collapse; width:100%; background-color:#F5F5DC}
+.tableFooter{width:92%; margin-bottom:4%; margin-left:4%; margin-right:4%;}
+.thFuncSummary{text-align:left; color:black; font-size:14px;}
+.tdBorderSummary{border: 1px #000 solid; text-align: center; font-size:12px;}
+.tdBorderSummaryLeft{border: 1px #000 solid; text-align: left; font-size:12px;}
+.tableFeatSummary{border-collapse: collapse; width:100%;}
+.tableCaseSummary{border-collapse: collapse; width:100%;}
+.tdCaseSummaryPass{border: 1px #000 solid; text-align: left; font-size:12px; background-color:#1E90FF; color:white;}
+.tdCaseSummaryFail{border: 1px #000 solid; text-align: left; font-size:12px; background-color:#FF4500; color:white;}
+.tdCaseSummarySkip{border: 1px #000 solid; text-align: left; font-size:12px; background-color:#2F4F4F; color:white;}
+.tdCaseSummaryNE{border: 1px #000 solid; text-align: left; font-size:12px; background-color:#C71585; color:white;}
+.tdCaseSummaryPassVal{border: 1px #000 solid; text-align: center; font-size:12px; background-color:#1E90FF; color:white;}
+.tdCaseSummaryFailVal{border: 1px #000 solid; text-align: center; font-size:12px; background-color:#FF4500; color:white;}
+.tdCaseSummarySkipVal{border: 1px #000 solid; text-align: center; font-size:12px; background-color:#2F4F4F; color:white;}
+.tdCaseSummaryNEVal{border: 1px #000 solid; text-align: center; font-size:12px; background-color:#C71585; color:white;}
+.tdFooter{text-align: left; font-size:12px; font-style:bold; color:white;}

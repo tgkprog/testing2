@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'
+	debug="false">
+	
+<!--	<root> 
+    		<priority value ="DEBUG" /> 
+    		<appender-ref ref="consoleAppender" /> 
+    		<appender-ref ref="fileAppender" /> 
+  	</root> -->
+
+
+	<appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
+		<param name="Threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="c %d %-5p  [%c][%t] %m %n" /> <!-- [%c{1}] -->
+		</layout>
+	</appender>
+
+	<!-- <appender name="fileAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="Threshold" value="INFO" />
+		<rollingPolicy name="file"  class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+        		<param name="FileNamePattern" value="${catalina.base}/logs/DdtServer.log.%d{yyyy-MM-dd}.gz"/>
+        		<param name="ActiveFileName" value="${catalina.base}/logs/DdtServer.log"/>
+			<MaxIndex>300</MaxIndex>
+     		</rollingPolicy>
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"> <MaxFileSize>15360kb</MaxFileSize> </triggeringPolicy> 
+		<param name="File" value="${catalina.base}/logs/DdtServer.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p [%c{1}][%t] %m %n" />
+		</layout>
+	</appender> -->
+	 <appender name="fileAppender"
+           class="org.apache.log4j.RollingFileAppender">
+      <param name="Threshold" value="ALL" />
+      <param name="File" value="logs/ddt.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value="%d %-5p  [%c{1}] %m %n" />
+      </layout>
+   </appender>
+
+	<logger name="org.s2n" additivity="false">
+		<level value="ALL" />
+		<appender-ref ref="consoleAppender" />
+		<appender-ref ref="fileAppender" />
+	</logger>
+	
+	   <!-- httpcomponents start -->
+	     <logger name="org.apache.http.wire" additivity="false" >
+      <level value="ALL" />
+      <appender-ref ref="consoleAppender"/>
+      <appender-ref ref="fileAppender"/>
+   </logger>
+   
+   
+     <logger name="org.apache.http.headers" additivity="false" >
+      <level value="ALL" />
+      <appender-ref ref="consoleAppender"/>
+      <appender-ref ref="fileAppender"/>
+   </logger>
+   <!-- httpcomponents end -->
+
+	<logger name="com.eviware" additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="consoleAppender" />
+		<appender-ref ref="fileAppender" />
+	</logger>
+
+	<logger name="org.apache.catalina.core" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="consoleAppender" />
+		<appender-ref ref="fileAppender" />
+	</logger>
+
+</log4j:configuration>

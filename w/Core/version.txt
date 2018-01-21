@@ -1,0 +1,37 @@
+-------
+Start version 0.1, 23 Aug 2013
+Tushar Kapila
+
+Java notes:
+TFW compoents:
+Utils - utilities for xls, http, java lang, io 
+Data - POJOS and persistence
+Core - UI and engine to CRUS plans, master plans, send messages to agents, show status and dash boards, collect and display reports.
+Agents - JVM to carrry out testing
+Runners 
+Http Runner - uses apache http components. For any web server calls (html, images, jsp, web services ...)
+Db notes :
+no change
+Deploy notes:
+need to update build and deploy, this is not final.
+
+End version
+
+Start version 1.2, 06 Sep 2013
+Brahma, Tushar Kapila
+
+Bug fixes
+see xls in TFW/TfwTests/src/main/resources/ for samples on how to use
+
+End version
+Start version 1.3, 12 Sep 2013  1.3
+Brahma, Tushar Kapila
+
+Bugs were fixed from the previous version:
+1) Object Not Found bug fix.
+2) SnapShot bug fix.
+
+The following new feature is added:
+1) Verifiers. - see xls in TestApp/src/resources for how to use
+End version
+-------

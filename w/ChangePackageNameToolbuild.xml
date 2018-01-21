@@ -1,0 +1,23 @@
+<project default="test">
+  <!--
+  
+    This build script is only for  renaming packages.
+    This project uses Maven as the build system.
+  -->
+  <target name="test">
+    <taskdef name="prename" classname="com.sun.wts.tools.ant.PackageRenameTask">
+      <classpath>
+        <pathelement path="target/classes" />
+      </classpath>
+    </taskdef>
+
+    <delete dir="../o" />
+    <prename srcdir="/p/ddt/2/oldVersions/w18/DdtCommon/src/main/java/" destdir="/p/ddt/2/oldVersions/w18/DdtCommon/src/main/java2/">
+    
+      <pattern from="org.s2n.ddt" to="org.s2n.ddt" />
+      <!-- pattern from="org.sel2in" to="org.s2na" /> -->
+    </prename>
+
+
+  </target>
+</project>
